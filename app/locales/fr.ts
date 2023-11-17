@@ -5,7 +5,7 @@ const fr: PartialLocaleType = {
   WIP: "Prochainement...",
   Error: {
     Unauthorized:
-      "Accès non autorisé, veuillez saisir le code d'accès dans la page des paramètres.",
+      "Accès non autorisé, veuillez saisir le code d'accès dans la [page](/#/auth) des paramètres.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} messages en total`,
@@ -111,6 +111,11 @@ const fr: PartialLocaleType = {
       Title: "Taille des polices",
       SubTitle: "Ajuste la taille de police du contenu de la conversation",
     },
+    InjectSystemPrompts: {
+      Title: "Injecter des invites système",
+      SubTitle:
+        "Ajoute de force une invite système simulée de ChatGPT au début de la liste des messages pour chaque demande",
+    },
     InputTemplate: {
       Title: "Template",
       SubTitle: "Le message le plus récent sera ajouté à ce template.",
@@ -168,11 +173,7 @@ const fr: PartialLocaleType = {
       SubTitle:
         "Comprimera si la longueur des messages non compressés dépasse cette valeur",
     },
-    Token: {
-      Title: "Clé API",
-      SubTitle: "Utilisez votre clé pour ignorer la limite du code d'accès",
-      Placeholder: "Clé OpenAI API",
-    },
+
     Usage: {
       Title: "Solde du compte",
       SubTitle(used: any, total: any) {
@@ -182,11 +183,7 @@ const fr: PartialLocaleType = {
       Check: "Vérifier",
       NoAccess: "Entrez la clé API pour vérifier le solde",
     },
-    AccessCode: {
-      Title: "Code d'accès",
-      SubTitle: "Contrôle d'accès activé",
-      Placeholder: "Code d'accès requis",
-    },
+
     Model: "Modèle",
     Temperature: {
       Title: "Température",
@@ -238,6 +235,9 @@ const fr: PartialLocaleType = {
   },
   Plugin: {
     Name: "Extension",
+  },
+  FineTuned: {
+    Sysmessage: "Eres un asistente que",
   },
   Mask: {
     Name: "Masque",
